@@ -534,7 +534,7 @@ NSString *const inbeaconsDidFailWithErrorNotification = @"inbeaconsDidFailWithEr
         
         NSDictionary *userInfo = @{NSLocalizedDescriptionKey : msg};
         NSError *error = [NSError errorWithDomain:NSStringFromClass([self class]) code:kCLErrorNetwork userInfo:userInfo];
-        [self connection:nil didFailWithError:error];
+        [self connection:_connection didFailWithError:error];
     }
 }
 
@@ -553,7 +553,7 @@ NSString *const inbeaconsDidFailWithErrorNotification = @"inbeaconsDidFailWithEr
 
 -(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
-    if (_webData)
+    if (_webData && data)
         [_webData appendData:data];
 }
 
@@ -581,7 +581,7 @@ NSString *const inbeaconsDidFailWithErrorNotification = @"inbeaconsDidFailWithEr
         NSError *error = nil;
         responseDict = [NSJSONSerialization JSONObjectWithData:_webData options:0 error:&error];
         if (error != nil) {
-            [self connection:nil didFailWithError:error];
+            [self connection:_connection didFailWithError:error];
             return;
         }
     }

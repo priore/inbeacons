@@ -27,6 +27,7 @@
 		9F9FE7C61A84D61000CBE32E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9F9FE7DF1A84D62800CBE32E /* inbeacons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inbeacons.h; sourceTree = "<group>"; };
 		9F9FE7E01A84D62800CBE32E /* inbeacons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = inbeacons.m; sourceTree = "<group>"; };
+		9FC2C7CE1BAC471100F2BBF2 /* inBeaconsSDK.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = inBeaconsSDK.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +79,7 @@
 			children = (
 				9F9FE7BA1A84D61000CBE32E /* Info.plist */,
 				9F9FE7BB1A84D61000CBE32E /* main.m */,
+				9FC2C7CE1BAC471100F2BBF2 /* inBeaconsSDK.podspec */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
