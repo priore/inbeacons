@@ -1,5 +1,5 @@
 # inBeaconsSDK
-inBeacons iOS SDK for Estimote beacons devices and http://www.inbacons.com Cloud CMS.
+inBeacons iOS SDK for Estimote beacons devices and http://www.inbeacons.com Cloud CMS.
 
 ```objective-c
 	#import "inbeacons.h"
